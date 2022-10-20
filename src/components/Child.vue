@@ -24,12 +24,12 @@ export default {
   beforeCreate() {
     alert("beforeCreate: before componet is created");
     // `this` points to the view model instance
-    console.log("count is " + this.title); // count is undefined
+    console.log("title is " + this.title); // title is undefined
   },
   created() {
     alert("created: component created but not yet added to DOM");
     // `this` points to the view model instance
-    console.log("count is: " + this.title); // count is: 10
+    console.log("title is: " + this.title); // title is: 10
 
     // ----------------------------------------------- Before update & updated related------------------
     setInterval(() => {
