@@ -62,7 +62,7 @@ export default {
   beforeDestroy() {
     alert("beforeDestroy: before component is destroyed");
     this.title = null;
-    delete this.books;
+    delete this.title;
   },
   destroy() {
     alert("destroy: after component has been destroyed");
