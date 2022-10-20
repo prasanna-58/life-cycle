@@ -67,7 +67,7 @@ export default {
   destroy() {
     alert("destroy: after component has been destroyed");
     this.$destroy();
-    console.log(this);
+    console.log(this);  // undefined
   }
 };
 </script>
