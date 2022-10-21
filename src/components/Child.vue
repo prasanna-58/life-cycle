@@ -47,7 +47,7 @@ export default {
   },
   mounted() {
     alert(
-      "mounted: after component is mounted to the DOM. This doesn't work for me"
+      "mounted: after component is mounted to the DOM."
     );
     console.log(this.$el.textContent); // I'm text inside the component.
   },
@@ -57,7 +57,7 @@ export default {
   },
   updated() {
     alert("updated: after data has been changed");
-    console.log(+this.$refs["dom"].textContent === this.counter); // Logs true every second
+    console.log(this.$refs["dom"].textContent === this.counter); // Logs true every second
   },
   beforeDestroy() {
     alert("beforeDestroy: before component is destroyed");
