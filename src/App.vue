@@ -1,16 +1,17 @@
 <template>
   <div id="app">
     <h1>Parent component</h1>
-    <Child/>
+     <router-view/>
+    <!-- <Child/> -->
   </div>
 </template>
 
 <script>
-import Child from './components/Child'
+// import Child from './components/Child'
 export default {
   name: 'App',
   components: {
-    Child
+    // Child
   }
 }
 </script>
